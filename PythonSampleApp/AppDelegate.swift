@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PythonBridge.startPython()
         PythonBridge.run("from time import time,ctime\n" +
                    "print('Holy shit this is Python! Today is',ctime(time()))\n")
+        
+        PythonBridge.runFile(Bundle.main.path(forResource: "python/main", ofType: "py"))
+        
         PythonBridge.finishPython()
         
         return true

@@ -45,4 +45,14 @@
     PyRun_SimpleString([string UTF8String]);
 }
 
++ (void)runFile:(NSString *)filename {
+    const char *cFilename = [filename UTF8String];
+    FILE *file = _Py_fopen(cFilename, "r+");
+    if (file != NULL) {
+        PyRun_SimpleFile(file, cFilename);
+    } else {
+        NSLog(@"Error loading %@", filename);
+    }
+}
+
 @end

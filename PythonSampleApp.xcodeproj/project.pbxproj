@@ -23,6 +23,7 @@
 		4A10C3671F79FA07008B4A83 /* XZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A10C3621F79FA07008B4A83 /* XZ.framework */; };
 		4A10C36A1F79FA44008B4A83 /* PythonBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A10C3691F79FA44008B4A83 /* PythonBridge.m */; };
 		4A10C36C1F79FC82008B4A83 /* Python.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4A10C3601F79FA07008B4A83 /* Python.framework */; };
+		4A10C3741F7A0902008B4A83 /* python in Resources */ = {isa = PBXBuildFile; fileRef = 4A10C3731F7A0902008B4A83 /* python */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		4A10C3681F79FA43008B4A83 /* PythonSampleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PythonSampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		4A10C3691F79FA44008B4A83 /* PythonBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PythonBridge.m; sourceTree = "<group>"; };
 		4A10C36B1F79FA81008B4A83 /* PythonBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PythonBridge.h; sourceTree = "<group>"; };
+		4A10C3731F7A0902008B4A83 /* python */ = {isa = PBXFileReference; lastKnownFileType = folder; path = python; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		4A10C3131F79F786008B4A83 = {
 			isa = PBXGroup;
 			children = (
+				4A10C3731F7A0902008B4A83 /* python */,
 				4A10C35E1F79FA07008B4A83 /* BZip2.framework */,
 				4A10C35F1F79FA07008B4A83 /* OpenSSL.framework */,
 				4A10C3601F79FA07008B4A83 /* Python.framework */,
@@ -283,6 +286,7 @@
 				4A10C3661F79FA07008B4A83 /* support.version in Resources */,
 				4A10C32A1F79F786008B4A83 /* LaunchScreen.storyboard in Resources */,
 				4A10C3271F79F786008B4A83 /* Assets.xcassets in Resources */,
+				4A10C3741F7A0902008B4A83 /* python in Resources */,
 				4A10C3251F79F786008B4A83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

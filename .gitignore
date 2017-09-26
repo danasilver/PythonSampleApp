@@ -73,3 +73,6 @@ OpenSSL.framework
 Python.framework
 XZ.framework
 support.version
+
+# macOS
+.DS_Store
