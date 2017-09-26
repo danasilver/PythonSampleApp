@@ -14,6 +14,15 @@
 		4A10C32A1F79F786008B4A83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A10C3281F79F786008B4A83 /* LaunchScreen.storyboard */; };
 		4A10C3351F79F786008B4A83 /* PythonSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10C3341F79F786008B4A83 /* PythonSampleAppTests.swift */; };
 		4A10C3401F79F786008B4A83 /* PythonSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10C33F1F79F786008B4A83 /* PythonSampleAppUITests.swift */; };
+		4A10C35B1F79F89A008B4A83 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A10C35A1F79F89A008B4A83 /* libsqlite3.tbd */; };
+		4A10C35D1F79F8A5008B4A83 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A10C35C1F79F8A5008B4A83 /* libz.tbd */; };
+		4A10C3631F79FA07008B4A83 /* BZip2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A10C35E1F79FA07008B4A83 /* BZip2.framework */; };
+		4A10C3641F79FA07008B4A83 /* OpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A10C35F1F79FA07008B4A83 /* OpenSSL.framework */; };
+		4A10C3651F79FA07008B4A83 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A10C3601F79FA07008B4A83 /* Python.framework */; };
+		4A10C3661F79FA07008B4A83 /* support.version in Resources */ = {isa = PBXBuildFile; fileRef = 4A10C3611F79FA07008B4A83 /* support.version */; };
+		4A10C3671F79FA07008B4A83 /* XZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A10C3621F79FA07008B4A83 /* XZ.framework */; };
+		4A10C36A1F79FA44008B4A83 /* InitializePython.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A10C3691F79FA44008B4A83 /* InitializePython.m */; };
+		4A10C36C1F79FC82008B4A83 /* Python.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4A10C3601F79FA07008B4A83 /* Python.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,16 @@
 		4A10C33B1F79F786008B4A83 /* PythonSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PythonSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A10C33F1F79F786008B4A83 /* PythonSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonSampleAppUITests.swift; sourceTree = "<group>"; };
 		4A10C3411F79F786008B4A83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A10C35A1F79F89A008B4A83 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		4A10C35C1F79F8A5008B4A83 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4A10C35E1F79FA07008B4A83 /* BZip2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BZip2.framework; sourceTree = "<group>"; };
+		4A10C35F1F79FA07008B4A83 /* OpenSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenSSL.framework; sourceTree = "<group>"; };
+		4A10C3601F79FA07008B4A83 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Python.framework; sourceTree = "<group>"; };
+		4A10C3611F79FA07008B4A83 /* support.version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = support.version; sourceTree = "<group>"; };
+		4A10C3621F79FA07008B4A83 /* XZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XZ.framework; sourceTree = "<group>"; };
+		4A10C3681F79FA43008B4A83 /* PythonSampleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PythonSampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		4A10C3691F79FA44008B4A83 /* InitializePython.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitializePython.m; sourceTree = "<group>"; };
+		4A10C36B1F79FA81008B4A83 /* InitializePython.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitializePython.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +73,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A10C3651F79FA07008B4A83 /* Python.framework in Frameworks */,
+				4A10C35D1F79F8A5008B4A83 /* libz.tbd in Frameworks */,
+				4A10C3641F79FA07008B4A83 /* OpenSSL.framework in Frameworks */,
+				4A10C35B1F79F89A008B4A83 /* libsqlite3.tbd in Frameworks */,
+				4A10C3671F79FA07008B4A83 /* XZ.framework in Frameworks */,
+				4A10C3631F79FA07008B4A83 /* BZip2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +102,16 @@
 		4A10C3131F79F786008B4A83 = {
 			isa = PBXGroup;
 			children = (
+				4A10C35E1F79FA07008B4A83 /* BZip2.framework */,
+				4A10C35F1F79FA07008B4A83 /* OpenSSL.framework */,
+				4A10C3601F79FA07008B4A83 /* Python.framework */,
+				4A10C3611F79FA07008B4A83 /* support.version */,
+				4A10C3621F79FA07008B4A83 /* XZ.framework */,
 				4A10C31E1F79F786008B4A83 /* PythonSampleApp */,
 				4A10C3331F79F786008B4A83 /* PythonSampleAppTests */,
 				4A10C33E1F79F786008B4A83 /* PythonSampleAppUITests */,
 				4A10C31D1F79F786008B4A83 /* Products */,
+				4A10C3591F79F89A008B4A83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +134,9 @@
 				4A10C3261F79F786008B4A83 /* Assets.xcassets */,
 				4A10C3281F79F786008B4A83 /* LaunchScreen.storyboard */,
 				4A10C32B1F79F786008B4A83 /* Info.plist */,
+				4A10C3691F79FA44008B4A83 /* InitializePython.m */,
+				4A10C3681F79FA43008B4A83 /* PythonSampleApp-Bridging-Header.h */,
+				4A10C36B1F79FA81008B4A83 /* InitializePython.h */,
 			);
 			path = PythonSampleApp;
 			sourceTree = "<group>";
@@ -123,6 +157,15 @@
 				4A10C3411F79F786008B4A83 /* Info.plist */,
 			);
 			path = PythonSampleAppUITests;
+			sourceTree = "<group>";
+		};
+		4A10C3591F79F89A008B4A83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A10C35C1F79F8A5008B4A83 /* libz.tbd */,
+				4A10C35A1F79F89A008B4A83 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +237,7 @@
 					4A10C31B1F79F786008B4A83 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = L8VKXC2S77;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					4A10C32F1F79F786008B4A83 = {
@@ -235,6 +279,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A10C36C1F79FC82008B4A83 /* Python.framework in Resources */,
+				4A10C3661F79FA07008B4A83 /* support.version in Resources */,
 				4A10C32A1F79F786008B4A83 /* LaunchScreen.storyboard in Resources */,
 				4A10C3271F79F786008B4A83 /* Assets.xcassets in Resources */,
 				4A10C3251F79F786008B4A83 /* Main.storyboard in Resources */,
@@ -262,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A10C36A1F79FA44008B4A83 /* InitializePython.m in Sources */,
 				4A10C3221F79F786008B4A83 /* ViewController.swift in Sources */,
 				4A10C3201F79F786008B4A83 /* AppDelegate.swift in Sources */,
 			);
@@ -417,11 +464,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L8VKXC2S77;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = PythonSampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.danasilver.PythonSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PythonSampleApp/PythonSampleApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -430,11 +481,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L8VKXC2S77;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = PythonSampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.danasilver.PythonSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PythonSampleApp/PythonSampleApp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
