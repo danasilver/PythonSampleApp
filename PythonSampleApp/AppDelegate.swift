@@ -16,8 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let python: InitializePython = InitializePython()
-        python.start()
+        PythonBridge.startPython()
+        PythonBridge.run("from time import time,ctime\n" +
+                   "print('Holy shit this is Python! Today is',ctime(time()))\n")
+        PythonBridge.finishPython()
         
         return true
     }

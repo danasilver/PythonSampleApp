@@ -11,9 +11,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface InitializePython : NSObject
+@interface PythonBridge : NSObject
 
-- (void) startPython;
++ (void) startPython;
++ (void) finishPython;
++ (void) run:(NSString *)string;
 
 @end
 

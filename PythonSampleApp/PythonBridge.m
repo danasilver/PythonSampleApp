@@ -6,12 +6,14 @@
 //  Copyright © 2017 Dana Silver. All rights reserved.
 //
 
-#import "InitializePython.h"
+#import "PythonBridge.h"
 #import <Python/Python.h>
 
-@implementation InitializePython
+@implementation PythonBridge
 
-- (void)startPython {
+#pragma mark Python
+
++ (void)startPython {
     NSString *tmp_path;
     NSString *python_home;
     wchar_t *wpython_home;
@@ -33,9 +35,14 @@
     putenv((char *)[tmp_path UTF8String]);
     
     Py_Initialize();
-    PyRun_SimpleString("from time import time,ctime\n"
-                       "print('Holy shit this is Python! Today is',ctime(time()))\n");
+}
+
++ (void)finishPython {
     Py_Finalize();
+}
+
++ (void)run:(NSString *)string {
+    PyRun_SimpleString([string UTF8String]);
 }
 
 @end
