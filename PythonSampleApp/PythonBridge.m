@@ -33,7 +33,7 @@
     Py_SetPythonHome(wpython_home);
     
     // Set PYTHONPATH
-    python_path = [NSString stringWithFormat:@"PYTHONPATH=%@/python", resourcePath, nil];
+    python_path = [NSString stringWithFormat:@"PYTHONPATH=%@/python:%@/python/packages", resourcePath, resourcePath, nil];
     putenv((char *)[python_path UTF8String]);
     
     // iOS provides a specific directory for temp files.
