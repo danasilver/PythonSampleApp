@@ -23,7 +23,7 @@
 		4A10C3671F79FA07008B4A83 /* XZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A10C3621F79FA07008B4A83 /* XZ.framework */; };
 		4A10C36A1F79FA44008B4A83 /* PythonBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A10C3691F79FA44008B4A83 /* PythonBridge.m */; };
 		4A10C36C1F79FC82008B4A83 /* Python.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4A10C3601F79FA07008B4A83 /* Python.framework */; };
-		4A10C3741F7A0902008B4A83 /* python in Resources */ = {isa = PBXBuildFile; fileRef = 4A10C3731F7A0902008B4A83 /* python */; };
+		4A10C3751F7A0F6E008B4A83 /* python in Resources */ = {isa = PBXBuildFile; fileRef = 4A10C3731F7A0902008B4A83 /* python */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -282,11 +282,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A10C3751F7A0F6E008B4A83 /* python in Resources */,
 				4A10C36C1F79FC82008B4A83 /* Python.framework in Resources */,
 				4A10C3661F79FA07008B4A83 /* support.version in Resources */,
 				4A10C32A1F79F786008B4A83 /* LaunchScreen.storyboard in Resources */,
 				4A10C3271F79F786008B4A83 /* Assets.xcassets in Resources */,
-				4A10C3741F7A0902008B4A83 /* python in Resources */,
 				4A10C3251F79F786008B4A83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

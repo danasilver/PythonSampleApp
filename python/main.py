@@ -1,4 +1,3 @@
-from datetime import datetime
+from app.now import now
 
-now = datetime.now()
-print("It is {}/{}/{}.".format(now.month, now.day, now.year))
+print(now())

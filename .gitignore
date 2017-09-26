@@ -76,3 +76,6 @@ support.version
 
 # macOS
 .DS_Store
+
+# Code
+.vscode/
