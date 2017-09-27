@@ -17,6 +17,7 @@
 + (void) finishPython;
 + (void) run:(NSString *)string;
 + (void) runFile:(NSString *)filename;
++ (NSString *)callIp;
 
 @end
 

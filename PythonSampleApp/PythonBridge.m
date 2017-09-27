@@ -61,4 +61,15 @@
     }
 }
 
++ (NSString *)callIp {
+    PyObject *module = PyImport_ImportModule("app.ip");
+    PyObject *result = PyObject_CallMethod(module, "ip", NULL /* no args */);
+    char *ipAddress = PyUnicode_AsUTF8(PyDict_GetItem(result, PyUnicode_FromString("origin")));
+
+    Py_DecRef(module);
+    Py_DecRef(result);
+    
+    return [NSString stringWithUTF8String:ipAddress];
+}
+
 @end

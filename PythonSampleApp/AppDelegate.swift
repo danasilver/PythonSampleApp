@@ -17,10 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         PythonBridge.startPython()
+        
+        // Run a Python string
         PythonBridge.run("from time import time,ctime\n" +
                    "print('Holy shit this is Python! Today is',ctime(time()))\n")
         
+        // Run a Python file with packages and imports
         PythonBridge.runFile(Bundle.main.path(forResource: "python/main", ofType: "py"))
+        
+        // Directly call the ip method and parse the result
+        print(PythonBridge.callIp())
         
         PythonBridge.finishPython()
         
